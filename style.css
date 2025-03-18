@@ -8,3 +8,35 @@ body {
 }
 
 /* ---------------------------------------------------- */
+
+.body {
+	display: flex;
+	flex-direction: column;
+}
+
+.hlavicka {
+	font-size: 2em;
+	font-weight: 600;
+	text-align: center;
+	padding-top: 20px;
+}
+
+.kontejner {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.ramecek {
+	border: 0.5px, solid, silver;
+	box-shadow: 0 2.5px azure;
+	border-radius: 2%;
+	text-align: center;
+	padding: 8%;
+	margin-top: 20px;
+}
+
+.ramecek img {
+	border-radius: 50%;
+}
+
