@@ -31,7 +31,7 @@ body {
 .ramecek {
 	border: 1px, solid, silver;
 	box-shadow: 0 3px azure;
-	border-radius: 2%;
+	border-radius: 4%;
 	text-align: center;
 	padding: 8%;
 	margin-top: 20px;
@@ -74,4 +74,38 @@ body {
 		padding-left: 10%;
 		}
 
+	}
+
+	/* PC: 960px a více */
+	@media (min-width: 960px) {
+		.kontejner {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			gap: 24px;
+		}
+
+		.ramecek:nth-child(2n) {
+			margin-left: 0;
+		}
+
+		.ramecek {
+			display: flex;
+			flex-direction: column;
+			padding: 24px;
+		}
+
+		.obsah {
+			padding: 0;
+			text-align: center;
+			margin: 0;
+		}
+
+		.obsah p {
+			margin: 0;
+			}
+
+		.obsah h2 {
+			margin: 24px 0;
+		}
 	}
