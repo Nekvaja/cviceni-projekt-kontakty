@@ -9,13 +9,14 @@ body {
 
 /* ---------------------------------------------------- */
 
+/* výchozí nastavení - mobil 0-540px */
 .body {
 	display: flex;
 	flex-direction: column;
 }
 
 .hlavicka {
-	font-size: 2em;
+	font-size: 2rem;
 	font-weight: 600;
 	text-align: center;
 	padding-top: 20px;
@@ -28,8 +29,8 @@ body {
 }
 
 .ramecek {
-	border: 0.5px, solid, silver;
-	box-shadow: 0 2.5px azure;
+	border: 1px, solid, silver;
+	box-shadow: 0 3px azure;
 	border-radius: 2%;
 	text-align: center;
 	padding: 8%;
@@ -40,3 +41,37 @@ body {
 	border-radius: 50%;
 }
 
+
+/* tablet 540-960px */
+	@media (min-width: 540px) {
+
+	.hlavicka {
+		font-size: 2.5rem;
+	}
+
+	.kontejner {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		}
+
+	.ramecek {
+		display: flex;
+		flex-direction: row;
+		width: calc(50% - 12px);
+		padding: 2%;
+		margin-top: 24px;
+		}
+
+	.ramecek:nth-child(2n) {
+		margin-left: 24px;
+	}
+
+	.obsah {
+		display:flex;
+		flex-direction: column;
+		text-align: left;
+		padding-left: 10%;
+		}
+
+	}
